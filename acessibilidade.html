@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- BARRA DE ACESSIBILIDADE -->
+
+    <!-- 1- METADADOS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Intruções sobre metadados, comentários, listas e layout em HTML">
+    <meta name="Keywords" content="HTML, Comentários, Metadados, Lista não Ordenada, Lista Ordenada, Layout">
+    <meta name="author" content="Ademir Martins Alves">
+
+    <link rel="stylesheet" href="style/estilo.css" type="text/css">
+    <link rel="shortcut icon" tytel="iamge/x-icon" href="imagem/T-300x300.png" />
+
+
+    <!-- 2- TÍTULO DO SITE -->
+    <title>Aulas Desenvolvimento Web1</title>
+
+</head>
+
+<body>
+
+    <!-- 3- TOPO DA PÁGINA --->
+    <header id="topo">
+        <!-- BARRA DE ACESSIBILIDADE -->
+
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo da página">
+                        Ir para o conteúdo [1]
+                    </a></li>
+
+                <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">
+                        Ir para o menu [2]
+                    </a></li>
+
+                <li><a href="#rodape" accesskey="3" title="Ir para o rodape">
+                        Ir para o rodape [3]
+                    </a></li>
+                <li id="pgacess"><a href="acessibilidade.html">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="semcontraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </div>
+
+        <a href="index.html" title="Ir para a página inicial">
+            <img src="imagem/FATEC_ZONA_LESTE.png" alt="Logo fatec zona leste nas cores cinza e vermelha" id="imagem">
+        </a>
+        <nav>
+            <lable for="bt_menu"><img src="imagem/menu.png" alt="menu"></lable>
+            <input type="checkbox" id="bt_menu"> <!-- Menu responsivo -->
+
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="#">Listas</a>
+
+                    <ul>
+                        <li><a href="lista_ordenada.html">Listas ordenadas</a></li>
+                        <li><a href="lista_nao_ordenada.html">Listas não ordenadas</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale conosco</a></li>
+
+            </ul>
+
+
+        </nav>
+    </header>
+
+    <main id="conteudo">
+        <h1 id="titulo">ACESSIBILIDADE</h1> <br>
+        <p>Este site foi desenvolvido para que pessoas com deficiência visual, baixa visão, daltonismo, deficiência
+            auditiva e mobilidade reduzida possam navegar por meio de recursos como alto contraste, aumento de fonte,
+            teclas de atalho, tradução para a Língua Brasileira de Sinais e navegação por teclado.</p>
+
+        <p>Para aumentar a fonte, é só clicar no símbolo de <span class="coloresp">A+</span> em nossa barra de
+            acessibilidade. Caso queira voltar ao tamanho de fonte original, é só clicar em <span
+                class="coloresp">A-</span>.</p>
+
+        <p>Se for necessário, você também pode usar o zoom nativo do seu navegador, pressionando as teclas “<span
+                class="coloresp">Ctrl</span>” e “<span class="coloresp">+</span>” para aumentar todo o site e “<span
+                class="coloresp">Ctrl</span>” e “<span class="coloresp">-</span>“ para diminuir. Para voltar ao padrão,
+            pressione “<span class="coloresp">Ctrl</span>” e “<span class="coloresp">0</span>”.</p>
+
+        <p>Este site tem melhor acessibilidade quando acessado nas versões mais atualizadas do seu navegador web.
+            Utilize sempre a versão mais recente de seu software.</p>
+
+        <br>
+        <p><strong>Teclas de atalho por navegadores</strong></p>
+
+        <span class="bloco">
+
+            <p>Internet Explorer e Google Chrome:</p>
+
+            <p>“<span class="coloresp">Alt</span>” + “<span class="coloresp">1</span>” - ir para o conteúdo</p>
+            <p>“<span class="coloresp">Alt</span>” + “<span class="coloresp">2</span>” - ir para o menu</p>
+            <p>“<span class="coloresp">Alt</span>” + “<span class="coloresp">3</span>” - ir para o rodapé</p>
+            <p>Firefox:</p>
+
+            <p>“<span class="coloresp">Alt</span>” + “<span class="coloresp">Shift</span>” + “<span
+                    class="coloresp">número</span>”</p>
+            <p>Opera:</p>
+
+            <p>“<span class="coloresp">Shift</span>” + “<span class="coloresp">Escape</span>” + “<span
+                    class="coloresp">número</span>”</p>
+            <p>Safari e OmniWeb:</p>
+
+
+            <p>“<span class="coloresp">Ctrl</span>” + “<span class="coloresp">número</span>”</p>
+        </span>
+
+        <br>
+        <p><strong>Navegação por tabulação</strong></p>
+
+        <p>Use a tecla Tab para navegar por elementos que recebem ação do usuário no site, tais como links, botões,
+            campos de formulário e outros na ordem em que eles são apresentados na página, e Shift + Tab para retornar.
+            Use as setas direcionais para acessar as informações textuais.</p>
+
+        <p><strong>Sugestões de programas disponíveis para pessoas com deficiência</strong></p>
+        <span class="bloco">
+            <p>- Nitrous Voice Flux: controla o computador por voz. Gratuito;</p>
+            <p>- NVDA: software livre para ler tela – vários idiomas (Windows);</p>
+            <p>- YeoSoft Text: leitor de tela em inglês e português;</p>
+            <p>- Jaws for Windows: leitor de tela – vários idiomas;</p>
+            <p>- Virtual Vision: leitor de telas em português do Brasil;</p>
+            <p>- DOSVOX: sistema para deficientes visuais (Windows ou Linux).</p>
+            <p>- Talckback: leitor de tela disponível em smartphones Android.</p>
+        </span>
+        <p>Observação: leia no manual do leitor de telas sobre a melhor forma de navegação em páginas web.</p><br>
+
+        <br>
+        <p><strong>LIBRAS - Língua Brasileira de Sinais</strong></p>
+
+        <p>Este site é acessível em LIBRAS através do <a href="http://www.vlibras.gov.br/" target="_blank">VLibras</a>.
+        </p>
+        <span class="bloco">
+            <p>-Do lado direito de cada página do site existe o ícone de um Widget informando que o site é acessível em
+                LIBRAS.</p>
+            <p>-Para traduzir, basta clicar sobre o ícone e selecionar o texto que deseja traduzir.</p>
+        </span>
+    </main>
+    <footer id="rodape">
+        <p class="paragrafo">Desenvolvido por Ademir Martins Alves</p>
+        <p class="paragrafo">Todos os direitos reservados &copy; 2022</p>
+    </footer>
+
+
+</body>
+
+</html>
