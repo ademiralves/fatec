@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <!-- 1- METADADOS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Intruções sobre metadados, comentários, listas e layout em HTML">
+    <meta name="Keywords" content="HTML, Comentários, Metadados, Lista não Ordenada, Lista Ordenada, Layout">
+    <meta name="author" content="Ademir Martins Alves">
+
+    <link rel="stylesheet" href="style/estilo.css" type="text/css">
+    <link rel="shortcut icon" tytel="iamge/x-icon" href="imagem/T-300x300.png" />
+
+
+    <!-- 2- TÍTULO DO SITE -->
+    <title>Aulas Desenvolvimento Web1</title>
+
+</head>
+
+<body>
+
+    <!-- 3- TOPO DA PÁGINA --->
+    <header id="topo">
+
+        <!-- BARRA DE ACESSIBILIDADE -->
+
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir para o conteúdo da página">
+                        Ir para o conteúdo [1]
+                    </a></li>
+
+                <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">
+                        Ir para o menu [2]
+                    </a></li>
+
+                <li><a href="#rodape" accesskey="3" title="Ir para o rodape">
+                        Ir para o rodape [3]
+                    </a></li>
+                <li id="pgacess"><a href="acessibilidade.html">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="semcontraste">SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+            </ul>
+        </div>
+
+        <a href="index.html" title="Ir para a página inicial">
+            <img src="imagem/FATEC_ZONA_LESTE.png" alt="Logo fatec zona leste nas cores cinza e vermelha" id="imagem">
+        </a>
+        <nav>
+            <lable for="bt_menu"><img src="imagem/menu.png" alt="menu"></lable>
+            <input type="checkbox" id="bt_menu"> <!-- Menu responsivo -->
+
+            <ul id="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="metadados.html">Metadados</a></li>
+                <li><a href="#">Listas</a>
+
+                    <ul>
+                        <li><a href="lista_ordenada.html">Listas ordenadas</a></li>
+                        <li><a href="lista_nao_ordenada.html">Listas não ordenadas</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="contato.html">Fale conosco</a></li>
+
+            </ul>
+
+
+        </nav>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Layout</li>
+        </ul>
+    </header>
+
+    <main id="conteudo">
+        <h1 id="titulo">LAYOUT</h1> <br>
+        <p class="paragrafo"><strong>&lt;HEADER&gt;</strong> define um cabeçalho para um comentário ou seção</p> <br>
+        <p class="paragrafo"><strong>&lt;NAV&gt;</strong> define um contêiner para links de navegação</p> <br>
+        <p class="paragrafo"><strong>&lt;SECTION&gt;</strong> define uma seção em um documento</p> <br>
+        <p class="paragrafo"><strong>&lt;ARTICLE&gt;</strong> define um artigo independente</p> <br>
+        <p class="paragrafo"><strong>&lt;ASIDE&gt;</strong> define conteúdo além do conteúdo (como uma barra lateral)
+        </p> <br>
+        <p class="paragrafo"><strong>&lt;FOOTER&gt;</strong> define um rodapé para um documento ou seção</p> <br>
+        <img src="imagem/layout.png" alt="Imagem mostrando a disposição dos elementos HTML"
+            style="max-width:400px;width: auto; padding:4%;">
+        <br><br>
+        <section>
+            <h2>Assuntos principais</h2>
+            <ol>
+                <li>Comentários</li>
+                <li>Metadados</li>
+                <li>Listas</li>
+                <li>Layout</li>
+            </ol>
+        </section>
+        <br><br>
+    </main>
+    <footer id="rodape">
+        <p class="paragrafo">Desenvolvido por Ademir Martins Alves</p>
+        <p class="paragrafo">Todos os direitos reservados &copy; 2022</p>
+    </footer>
+
+
+</body>
+
+</html>
